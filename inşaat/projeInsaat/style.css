@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+}
+
+.auth-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-links .button {
+    background-color: #8b7eeec9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 80vh;
+    background: url('insaat3.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header {
+    position: relative; /* Siyah tonlamanın düzgün çalışabilmesi için relative yapıyoruz */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Gri arka plan (koyu gri ton) */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah tonlama */
+    z-index: -1; /* Tonlamanın header arka planında kalması için negatif z-index */
+}
+
+.logo img {
+    z-index: 2; /* Logonun arka plan tonlamasının üzerinde kalmasını sağlarız */
+}
+
+nav ul, .auth-links {
+    z-index: 2; /* Menü ve bağlantılar da tonlamanın üstünde kalmalı */
+}
+
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(insaat3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+}
+
+.hero .overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah tonlama */
+    z-index: 2;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+}
+
+.hero input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #18133fc9;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color:#e5e3f3c9;
+}
+.electric{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.electric:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+.water{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.water:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+
+.concrete{
+    transition: color 0.5s, background-color 0.5s;
+    
+
+}
+.concrete:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+.gas{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.gas:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+
+.brick{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.brick:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+.iron{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.iron:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+.master{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.master:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+.diger{
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+.diger:hover{
+    color: white;
+    background-color: #18133fc9;
+}
+
+.login{
+    transition: color 0.5s, background-color 0.5s;
+    
+
+}
+.login:hover{
+    color: white;
+    background-color: #18133fc9;
+}.help{
+    transition: color 0.5s, background-color 0.5s;
+    
+
+}
+.help:hover{
+    color: white;
+    background-color: #18133fc9;
+}
